@@ -1,10 +1,10 @@
 """
-Author: Your Name, login@purdue.edu
-Assignment: mm.n - Assignment Name
-Date: MM/DD/YYYY
+Author: Yuqing Huang, huan1783@purdue.edu
+Assignment: mm.n - Hello User
+Date: 08/23/2022
 
 Description:
-    Describe your program here.
+    This program is used to ask for the user's name and then greet the user
 
 Contributors:
     Name, login@purdue.edu [repeat for each]
@@ -33,9 +33,6 @@ Academic Integrity Statement:
 
 
 def main():
-    ##
-    ## This program is used to ask for the user's name and then greet the user
-    ##
     ## first ask for the user's name 
     userName = input("What is your name? ")
 
