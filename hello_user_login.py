@@ -33,8 +33,14 @@ Academic Integrity Statement:
 
 
 def main():
-    ## This program is used to ask for the user's name and greet the user
+    ##
+    ## This program is used to ask for the user's name and then greet the user
+    ##
+    ## first ask for the user's name 
+    userName = input("What is your name? ")
 
+    ## greet the user with the name
+    print('Hello ' + userName + '!')
 
 
 """Do not change anything below this line."""
