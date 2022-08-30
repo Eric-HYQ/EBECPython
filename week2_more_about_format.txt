@@ -1,0 +1,19 @@
+`format(value, 'options')`
+options include:
+fill: *, 0
+align: <, >, =, ^
+sign: +, - (used only for coresponding signs)
+width: integer, stipulate the min width
+precision: integer, stipulate decimal number
+type: b, c, d, e, E, f, F, g, G, n, o, s
+
+eg:
+>>> format(12345.6789, '*<13,.3f')
+'12,345.679***'
+>>> format(12345.6789, '0^13,.3f')
+'012,345.67900'
+
+besides, can also used in string
+>>>m = {"name":"N","where":"W"}
+>>> print("name: {name}, where: {where}".format(**m))
+name: N, where: W
