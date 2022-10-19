@@ -30,24 +30,22 @@ Academic Integrity Statement:
  
 
 """Write new functions below this line (starting with unit 4)."""
+def print_word(iniList):
+    print('Your square is:')
+    l = iniList[0] + iniList[1] + iniList[2]
+    print("  {0} {1} {2}\n  {3} {4} {5}\n  {6} {7} {8}".format(*l))
 def print_square(iniList):
     # print the square in 3 by 3
-    print('Your square is:')
-    rows, cols = 3,3
-    for r in range(rows):
-        print(' ', end='');
-        for c in range(cols):
-            n = iniList[r][c]
-            print(f'{n:2d}', end='')
-        print()
+    l = iniList[0] + iniList[1] + iniList[2]
+    print("Your square is:\n  {0} {1} {2}\n  {3} {4} {5}\n  {6} {7} {8}".format(*l))
 
 def is_magic(iniList):
     # to judge if a square Magic one
     # two criteria
     testList = [1,2,3,4,5,6,7,8,9];
     newList = iniList[0] + iniList[1] + iniList[2];
-    if newList.sort() == testList:
-        print(iniList)
+    newList.sort();
+    if newList == testList:
         if sum(iniList[0]) == 15:
             if sum(iniList[1]) == 15:
                 if sum(iniList[2]) == 15:
@@ -82,6 +80,7 @@ def is_magic(iniList):
         return False
 
 def print_result(iniList):
+    # use functions before to print the final results
     print_square(iniList)
     if is_magic(iniList):
         print('It is a Lo Shu magic square!\n')
@@ -90,14 +89,14 @@ def print_result(iniList):
 
 def main():
     # get a 2-d list
-    # peint it first
-    # then judge it and print the result
+    # print the grid list first
+    # then judge if the list a magic list and then print the final result
     list1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
     list2 = [[5, 5, 5], [5, 5, 5], [5, 5, 5]];
     list3 = [[4, 9, 2], [3, 5, 7], [8, 1, 6]];
-    print_result(list1)
-    print_result(list2)
-    print_square(list3)
+    for i in [list1, list2, list3]:
+        print_result(i);
+
 
 
 """Do not change anything below this line."""
