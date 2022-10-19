@@ -30,14 +30,10 @@ Academic Integrity Statement:
  
 
 """Write new functions below this line (starting with unit 4)."""
-def print_word(iniList):
-    print('Your square is:')
-    l = iniList[0] + iniList[1] + iniList[2]
-    print("  {0} {1} {2}\n  {3} {4} {5}\n  {6} {7} {8}".format(*l))
 def print_square(iniList):
     # print the square in 3 by 3
     l = iniList[0] + iniList[1] + iniList[2]
-    print("Your square is:\n  {0} {1} {2}\n  {3} {4} {5}\n  {6} {7} {8}".format(*l))
+    print("  {0} {1} {2}\n  {3} {4} {5}\n  {6} {7} {8}".format(*l))
 
 def is_magic(iniList):
     # to judge if a square Magic one
@@ -81,6 +77,7 @@ def is_magic(iniList):
 
 def print_result(iniList):
     # use functions before to print the final results
+    print('Your square is:')
     print_square(iniList)
     if is_magic(iniList):
         print('It is a Lo Shu magic square!\n')
