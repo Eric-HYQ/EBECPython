@@ -76,6 +76,7 @@ def main():
     dic_write_out(wordFreq1, 'python_1_word_frequency.txt')
     wordList2 = load_file_data('python_2.txt');
     wordFreq2 = unique_word(wordList2);
+    del wordFreq2['']
     dic_write_out(wordFreq2, 'python_2_word_frequency.txt')
     # find common words and output
     wordSet1 = set(wordFreq1)
