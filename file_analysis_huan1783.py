@@ -40,10 +40,12 @@ def load_file_data(filename):
         data = fo.read();
         dataLow = data.lower()
         punc = string.punctuation
-        dataNoPunc = dataLow.translate(dataLow.maketrans('', '', punc))
-        dataNoTrans = dataNoPunc.split('\n')
+        #dataNoPunc = dataLow.translate(dataLow.maketrans('', '', punc))
+        #dataNoPunc = dataLow.strip(punc)
+        #dataNoTrans = dataNoPunc.split('\n')
+        dataNoTrans = dataLow.split('\n')
         dataWord = [i.split(' ') for i in dataNoTrans if i != '']
-        wordList = [item for sublist in dataWord for item in sublist]
+        wordList = [item.strip(punc) for sublist in dataWord for item in sublist]
     return wordList;
 
 def unique_word(wl):

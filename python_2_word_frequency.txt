@@ -27,8 +27,8 @@ built: 1
 bunch: 1
 but: 4
 c: 1
+c/c++/java: 2
 can: 4
-ccjava: 2
 changing: 1
 checking: 1
 code: 1
@@ -47,8 +47,8 @@ development: 1
 dictionaries: 1
 do: 1
 domain: 1
+don't: 1
 done: 1
-dont: 1
 easy: 1
 error: 1
 even: 2
@@ -57,7 +57,7 @@ example: 1
 extension: 1
 files: 5
 find: 3
-firstdraft: 1
+first-draft: 1
 flexible: 1
 for: 7
 game: 1
@@ -69,7 +69,7 @@ hand: 1
 has: 1
 have: 1
 help: 1
-highlevel: 1
+high-level: 1
 if: 2
 implement: 1
 in: 5
@@ -125,7 +125,7 @@ rename: 1
 reused: 1
 script: 1
 scripts: 2
-searchandreplace: 1
+search-and-replace: 1
 several: 1
 shell: 3
 simple: 2
@@ -152,7 +152,7 @@ text: 2
 than: 3
 that: 4
 the: 6
-theres: 1
+there's: 1
 these: 1
 things: 1
 those: 1
@@ -163,10 +163,10 @@ types: 2
 unix: 2
 use: 4
 usual: 1
-veryhighlevel: 1
+very-high-level: 1
 want: 1
 way: 1
-wellsuited: 1
+well-suited: 1
 whetting: 1
 whole: 1
 will: 1
@@ -175,12 +175,12 @@ wish: 1
 with: 2
 work: 2
 write: 3
-writecompiletestrecompile: 1
+write/compile/test/re-compile: 1
 writing: 2
 written: 1
 yet: 1
 you: 11
-youd: 2
+you'd: 2
+you're: 2
+you've: 1
 your: 4
-youre: 2
-youve: 1
